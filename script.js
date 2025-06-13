@@ -1,3 +1,4 @@
+// Page 1 Resources // -----------------------------------------------------
 const noButton = document.getElementById("no-btn");
 const yesButton = document.getElementById("yes-btn");
 const buttonsContainer = document.querySelector(".buttons");
@@ -17,7 +18,7 @@ const nuhUh = [
 
 function moveNoButton(){
     noButton.style.position = "absolute";
-    
+
     const containerRect = buttonsContainer.getBoundingClientRect();
     const btnRect = noButton.getBoundingClientRect();
     const maxY = containerRect.height - btnRect.height;
@@ -62,3 +63,5 @@ noButton.addEventListener("click", function(e) {
     e.preventDefault();
     moveNoButton();
 });
+//----------------------------------------------------------//
+//PAGE 2 Resources//
