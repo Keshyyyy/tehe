@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+    font-family: 'Patrick Hand', cursive;
+    background: linear-gradient(135deg, #d2f3c3, #f0fff0);
+    background: url("https://dayair.org/wp-content/uploads/2021/05/AdobeStock_265268309-scaled.jpeg");
+    background-size: cover;
+    color: #2d5016;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.note{
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 100, 0, 0.2);
+    max-width: 600px;
+    width: 90%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.vines{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 0;
+    background: transparent;
+    user-select: none;
+    animation: vinesWiggle 4s ease-in-out infinite;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+u1{
+    list-style: none;
+    padding-left: 0;
+}
+
+li{
+    margin: 15px 0;
+    padding-left: 25px;
+    position: relative;
+}
+
+li::before{
+    content: "🌿";
+    position: absolute;
+    left: 0;
+}
+
+@keyFrames fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes vinesWiggle{
+    0% {transform: rotate(0deg);}
+    50% {transform: rotate(1deg);}
+    100% {transform: rotate(0deg);}
+}
